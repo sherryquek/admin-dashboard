@@ -1,1 +1,2 @@
-# admin-dashboard
+# Dark Mode Admin Dashboard
+For TheOdinProject
