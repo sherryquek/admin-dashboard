@@ -3,3 +3,63 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'nunito-sans';
+    src: url('assets/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf');
+}
+
+@font-face {
+    font-family: 'source-sans';
+    src: url('assets/SourceSans3-VariableFont_wght.ttf');
+}
+
+:root {
+    --bg-white: #F5F7F8;
+    --accent-yellow: #F4CE14;
+    --accent-green: #495E57;
+    --accent-grey: #c2cada;
+}
+
+body {
+    display: grid;
+    grid-template-columns: max(300px, 23vw) 77vw;
+    grid-template-rows: max(170px, 30vh) 70vh;
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: var(--accent-green);
+}
+
+.logo {
+    margin: 12%;
+    margin-top: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    -webkit-filter: invert(100%);
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+}
+
+.logo span {
+    font-family: 'nunito-sans', sans-serif;
+    font-size: 30px;
+    color: var(--bg-white);
+} 
+
+.header {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: var(--bg-white);
+}
+
+.content {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: var(--accent-grey);
+}
